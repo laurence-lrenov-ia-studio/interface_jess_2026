@@ -304,7 +304,7 @@ dialog label{margin-bottom:12px}dialog .actions{margin-top:16px}
 <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form id="confirm-form"><h3 id="confirm-title">Confirmer la demande</h3><p id="confirm-company" class="note"></p><label class="dialog-label">Week-end retenu<select id="confirm-period" required></select></label><label class="dialog-label">Jour de pose<select id="confirm-day" required><option value="">Choisir un jour</option><option value="SAMEDI">Samedi</option><option value="DIMANCHE">Dimanche</option></select></label><p id="confirm-error" class="note" role="alert"></p><div class="actions"><button class="gold-btn" id="confirm-submit">Confirmer</button><button type="button" class="btn-action" id="confirm-cancel">Annuler</button></div></form></dialog>
 <script>
 
-const API='https://script.google.com/macros/s/AKfycbwr1qDKqRk9gfHjDwHxQPS0aZMLl2FbjLOe5R7H1xkJ9DmcILSH689VRe3q_WLx2HiHHA/exec';
+const API='https://script.google.com/macros/s/AKfycbyCzjJLuOCnD1oayy5W45EHQQHRwt6AT9Xp9gjgzZRlf3oGTTucugh33Lr9wDvhiu0AfA/exec';
 const $=id=>document.getElementById(id);
 let data={bookings:[],periods:[]},expanded=false,busy=false,confirmId='';
 const statuses={'NOUVELLE':'new','DEVIS ENVOYÉ':'quote','CONFIRMÉE':'confirmed','REFUSÉE':'refused'};
